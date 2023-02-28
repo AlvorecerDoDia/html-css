@@ -30,7 +30,7 @@
 
 body {
     background-color: var(--cor1);
-    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-family: var(--fonte-padrao)
 }
 
 header {
@@ -39,12 +39,12 @@ header {
     padding-top: 40px;
     padding-bottom: 10px;
     background-image: linear-gradient(to top, var(--cor6), var(--cor4));
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-padrao);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.493);
 }
 
 header>p {
-    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-family: var(--fonte-padrao);
     margin: auto;
     max-width: 600px;
 
