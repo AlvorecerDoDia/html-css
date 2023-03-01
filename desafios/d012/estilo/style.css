@@ -8,6 +8,7 @@
     src: url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'sriracha';
     src: url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
@@ -15,8 +16,15 @@
 }
 
 :root {
-    --font-cordel: 'sriracha';
-    --font-titulo: 'passion one';
+    /*
+    fonte1 = fonte padrão
+    fonte2 = título
+    fonte3 = texto cordel
+    */
+
+    --fonte1: 'Verdana, Geneva, Tahoma, sans-serif;';
+    --fonte2: 'passion one', 'cursive';
+    --fonte3: 'sriracha', 'cursive';
 }
 
 
@@ -29,6 +37,7 @@ html,
 body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -48,11 +57,10 @@ a:hover {
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 15vh;
     padding-top: 50px;
     font-variant: small-caps;
-    font-family: var(--font-titulo)
-    
+    font-family: var(--fonte2)
 }
 
 header p {
@@ -65,8 +73,13 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
-    font-family: var(--font-cordel);
+    font-family: var(--fonte3);
+    font-size: 3.5vh;
 
+}
+
+section>p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -74,17 +87,30 @@ section.normal {
     color: black;
 }
 
-section.imagem>p {
-    background-color: rgba(0, 0, 0, 0.288);
-    width: 300px;
-    padding: 5px;
+section.imagem {
+    background-color: black;
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 4px 6px 13px 4px rgba(0, 0, 0, 0.596);
 }
 
+section.imagem>p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.555);
+    width: 300px;
+    padding: 5px;
+    text-shadow: 1px 1.5px 0px black;
+}
 
-section.imagem {
-    background-color: gray;
-    color: white;
+section#img1 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
 
+section#img2 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
 }
 
 footer {
