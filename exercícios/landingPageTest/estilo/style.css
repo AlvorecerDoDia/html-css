@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: normal 1em arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    color: #EBEBEB;
+}
+
+a{
+    cursor: pointer;
+}
+
+a:hover{
+    color: #ffffff;
+}
+header{
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #525252;
+    border-bottom: 1px solid #9E9E9E;
+}
+
+header img{
+    width: 70px;
+}
+
+header > ul{
+    display: flex;
+    
+}
+ 
+header li{
+    list-style: none;
+    margin: 0px 25px;
+}
+
+
+header i{
+    color: #EBEBEB;
+    text-decoration: none;
+    font-size: 2em;
+    margin-right: 20px;
+}
+
+header i:hover{
+    color: #ffffff;
+}
+
+main{
+    background: black url('imagens/pexels-andrew-neel-3178786\ copiar.jpg') no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 85vh;
+}
+
+#main_left{
+    width: 40%;
+    float: left;
+}
+
+
+#main_right{
+    width: 40%;
+    float: right;
+}
+
+footer{
+    display: flex;
+    background-color: #525252;
+    border-top: 1px solid #9E9E9E;
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+
